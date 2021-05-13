@@ -1,0 +1,49 @@
+{% extends "index" %}
+
+{% set body_classes = 'inner-page' %}
+{% set pageTitle = entry.title %}
+{% set pageDescription = entry.shortDescription|default('BEST International Pesticide, Pest Control') ~ " | " ~ siteName %}
+
+{% block content %}
+
+    <article class="section">
+        <div class="content-column content-column--narrow">
+
+            <h1 class="centered">{{ entry.title }}</h1>
+
+            {% set photo = entry.productThumbnail.one() %}
+
+            <div class="centered">
+                {% if photo %}
+                    <img src="{{ photo.url }}" alt="{{ photo.title }}">
+                {% else %}
+                    <img src="../web/static/images/photos/mohit-suthar-a1_tFcBSp7w-unsplash.jpg" alt="Photo">
+                {% endif %}
+            </div>
+            <br>
+
+            <!-- Slider Component -->
+            <div class="slider">
+
+                <div class="slider__nav">
+                    <button type="button" class="slider__prev">
+                        <img src="{{ siteUrl }}/static/images/arrow-prev.svg" alt="Previous">
+                    </button>
+                    <button type="button" class="slider__next">
+                        <img src="{{ siteUrl }}/static/images/arrow-next.svg" alt="Next">
+                    </button>
+                </div>
+
+                {# slider goes here#}
+                {% include "components/slider" with {
+                    photos: entry.photos.all()
+                } %}
+
+            </div>
+
+            {{ entry.richText }}
+        </div>
+    </article>
+
+{% endblock %}
+

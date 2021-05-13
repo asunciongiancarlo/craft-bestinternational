@@ -1,0 +1,54 @@
+{% extends "index" %}
+
+{% set body_classes = 'inner-page' %}
+{% set pageTitle = entry.title %}
+{% set pageDescription = entry.title|default('BEST International Pest Control Products') ~ " | " ~ siteName %}
+
+{% block content %}
+
+    {% set products = craft.entries.section('products').all() %}
+    {% set c = craft.entries.section('products').count() %}
+
+{#    {% cache using key 'products-listing' %}#}
+
+        <section class="section">
+        <div class="content-column">
+
+            <h1 class="centered">{{ entry.title }}</h1>
+
+            <div class="two-columns">
+                {% for product in products  %}
+                    <div class="two-columns__item">
+
+                        {% set photo = product.productThumbnail.one() %}
+                        <div class="two-columns__content">
+                            <h2>{{ product.title }}</h2>
+                            <p>{{ product.shortDescription }}<p>
+                                <a href="{{ product.url }}" class="cta-link">View</a>
+                            </p>
+                        </div>
+
+
+                        <div class="two-columns__image">
+                            <a href="{{ product.url }}">
+                            {% if photo %}
+                                <img src="{{ photo.url }}" alt="{{ photo.title }}" style="height: 800px;width: 600px;">
+                            {% else %}
+                                <img src="../web/static/images/photos/mohit-suthar-a1_tFcBSp7w-unsplash.jpg" alt="Photo">
+                            {% endif %}
+                            </a>
+                        </div>
+
+                    </div>
+                {% endfor %}
+
+            </div>
+
+        </div>
+    </section>
+
+{#    {% endcache %}#}
+
+{% endblock %}
+
+

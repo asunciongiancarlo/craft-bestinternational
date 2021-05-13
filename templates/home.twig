@@ -1,0 +1,72 @@
+{% extends "index" %}
+{% set pageTitle = entry.title %}
+
+{% block content %}
+
+        {%  set image = entry.heroImage.one() %}
+        <section class="hero" style="background-image: url('{{ image.getUrl('hero') }}')">
+            <div class="hero__content content-column">
+                <h1> {{ entry.heroTitle }}</h1>
+            </div>
+        </section>
+
+
+        <section class="featured-story">
+                <div class="featured-story__flex content-column">
+
+                    <div class="featured-story__content">
+                        {{ entry.richText }}
+                        <p>
+                            <a href="products/" class="cta-link">View</a>
+                        </p>
+                    </div>
+
+                    {% if entry.photos.count() > 0 %}
+                        <div class="featured-story__slider">
+                            <div class="slider">
+                                <div class="slider__nav">
+                                    <button type="button" class="slider__prev">
+                                        <img src="{{ siteUrl }}/static/images/arrow-prev.svg" alt="Previous">
+                                    </button>
+                                    <button type="button" class="slider__next">
+                                        <img src="{{ siteUrl }}/static/images/arrow-next.svg" alt="Next">
+                                    </button>
+                                </div>
+                            <!-- Slider Component -->
+                            {% include "components/slider" with {
+                                photos: entry.photos.all()
+                            } %}
+                            </div>
+                        </div>
+                    {% endif %}
+
+                </div>
+            </section>
+
+
+        <section class="section section--more-padding section--light section--angled-top">
+            <div class="content-column centered">
+
+                {{ entry.testimonyintro }}
+
+                <div class="flex-columns">
+                    {% for testimony in entry.testimonies.all() %}
+                        <div class="flex-columns__item">
+
+                            {% set photo = testimony.photo.one() %}
+                            {% if photo %}
+                                <img src="{{ photo.getUrl('thumbnail') }}" alt="{{ testimony.clientName }}" class="flex-columns__image">
+                            {% endif %}
+
+                            <h4> {{ testimony.clientName }} </h4>
+                            <p> {{ testimony.TestimonyContent }} </p>
+                        </div>
+                    {% endfor %}
+                </div>
+
+            </div>
+        </section>
+
+
+
+{% endblock %}

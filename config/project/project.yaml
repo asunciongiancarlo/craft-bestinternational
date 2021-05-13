@@ -1,0 +1,37 @@
+dateModified: 1620871728
+email:
+  fromEmail: asunciongiancarlo@gmail.com
+  fromName: bestinternational
+  transportType: craft\mail\transportadapters\Sendmail
+plugins:
+  contact-form:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      allowAttachments: ''
+      prependSender: 'On behalf of'
+      prependSubject: 'New message from bestinternational'
+      successFlashMessage: 'Your message has been sent.'
+      toEmail: asunciongiancarlo@gmail.com
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+  super-table:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.2.1
+system:
+  edition: solo
+  live: true
+  name: 'BEST International'
+  retryDuration: null
+  schemaVersion: 3.6.8
+  timeZone: Asia/Manila
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

@@ -1,0 +1,111 @@
+field: ba4b4c26-d58e-4403-aff6-583cf721d61f # Testimonies
+fieldLayouts:
+  a0e327c8-a0d1-4c84-aed4-15a0735b6822:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 5c5e42f2-45d8-4fcc-90ce-cdb90850aa64 # Photo
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 1af2d1a7-080f-4594-8b92-11944576d9d7 # Client Name
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: d9401a09-4c06-4a62-8aa6-f1d1423ab765 # TestimonyContent
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  1af2d1a7-080f-4594-8b92-11944576d9d7: # Client Name
+    contentColumnType: text
+    fieldGroup: null
+    handle: clientName
+    instructions: ''
+    name: 'Client Name'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  5c5e42f2-45d8-4fcc-90ce-cdb90850aa64: # Photo
+    contentColumnType: string
+    fieldGroup: null
+    handle: photo
+    instructions: ''
+    name: Photo
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:e484cb54-49c9-4f80-8ded-d769de4786f2' # Uploads
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: '1'
+      selectionLabel: ''
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:e484cb54-49c9-4f80-8ded-d769de4786f2' # Uploads
+      singleUploadLocationSubpath: ''
+      source: null
+      sources:
+        - 'volume:e484cb54-49c9-4f80-8ded-d769de4786f2' # Uploads
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  d9401a09-4c06-4a62-8aa6-f1d1423ab765: # TestimonyContent
+    contentColumnType: text
+    fieldGroup: null
+    handle: TestimonyContent
+    instructions: ''
+    name: TestimonyContent
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: testimony
+name: Testimony
+sortOrder: 1

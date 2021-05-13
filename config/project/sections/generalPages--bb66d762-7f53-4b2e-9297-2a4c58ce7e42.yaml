@@ -1,0 +1,14 @@
+enableVersioning: true
+handle: generalPages
+name: 'General Pages'
+propagationMethod: all
+siteSettings:
+  e92c1b76-66ef-415c-9b13-f7b5b74aa8d4: # BEST International
+    enabledByDefault: true
+    hasUrls: true
+    template: general
+    uriFormat: '{parent.uri}/{slug}'
+structure:
+  maxLevels: 2
+  uid: 8ff74150-d62e-4f8a-9637-190605f50a50
+type: structure

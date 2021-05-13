@@ -1,0 +1,28 @@
+contentColumnType: text
+fieldGroup: 2a24854f-77e9-44a6-8ca3-c715328f5924 # Home Page
+handle: testimonyintro
+instructions: ''
+name: TestimonyIntro
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes:
+    - e484cb54-49c9-4f80-8ded-d769de4786f2 # Uploads
+  cleanupHtml: true
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: ''
+  purifyHtml: '1'
+  redactorConfig: ''
+  removeEmptyTags: '1'
+  removeInlineStyles: '1'
+  removeNbsp: '1'
+  showHtmlButtonForNonAdmins: '1'
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

@@ -1,0 +1,88 @@
+{% set pageTitle = pageTitle|default('Home') ~ " | " ~ siteName %}
+{% set pageDescription = pageDescription|default('BEST International Home') ~ " | " ~ siteName %}
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="referrer" content="origin-when-cross-origin" />
+    <link rel="shortcut icon" href="{{ siteUrl }}static/favicon.ico" type="image/x-icon" />
+
+    <title>{{ pageTitle }}</title>
+    <meta name="description" content="{{ pageDescription }}">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ siteUrl  }}static/css/styles.css">
+
+</head>
+<body class="{{ body_classes|default('home-page') }}">
+
+<div class="wrapper">
+
+    <header class="header">
+        <div class="header__content content-column">
+
+            <a href="{{ siteUrl }}" class="logo">
+                <img src="{{ siteUrl }}static/images/best-logo-1.png" alt="{{ siteName }}" style="max-height: 70px;">
+            </a>
+
+            <button type="button" class="nav-toggle">
+                <img src="{{ siteUrl }}static/images/list.svg" alt="Menu" class="icon-open-menu">
+                <img src="{{ siteUrl }}static/images/x.svg" alt="Close Menu" class="icon-close-menu">
+            </button>
+
+            <nav class="nav">
+                {#Pagka global pwede maacess sa lahat ng template un#}
+                {#Be carefull sa field type pag MORE than one pwede multiple un#}
+
+                {% for link in header.navLinks.all() %}
+                    {%  set destination = link.linkDestination.one() %}
+                    {%  set activeLink = craft.app.request.segments|first == destination.uri %}
+
+                    <a href="{{ destination.url }}" class="nav__link {% if activeLink %} nav__link--active{% endif %} ">{{ link.linkText }}</a>
+                {%  endfor %}
+            </nav>
+
+        </div>
+    </header>
+
+    {% block content %}
+        {#home page#}
+    {% endblock %}
+
+</div>
+
+<footer class="footer">
+
+    <div class="centered">
+        <br>
+        <iframe style="overflow:hidden;" src="https://docs.google.com/forms/d/e/1FAIpQLScxTAcsp_BD6lb_ENq4TGiHSu-4ShbKr_Cs6lYPfcLFKzbqeg/viewform?embedded=true"
+                width="640" height="1200"
+                frameborder="0" marginheight="0" marginwidth="0">Loading…
+        </iframe>
+        <br>  <br>  <br>
+    </div>
+
+    <div class="content-column centered" style="color:white!important;">
+        <p>{{ footer.richText }}</p>
+    </div>
+</footer>
+
+<script src="{{ siteUrl }}static/js/scripts.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7MY2GFW33L"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-7MY2GFW33L');
+</script>
+</body>
+</html>

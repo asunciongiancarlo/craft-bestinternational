@@ -1,0 +1,33 @@
+contentColumnType: string
+fieldGroup: 2f6e2f12-9aba-4a80-8f9d-69612e59fd11 # Common
+handle: productThumbnail
+instructions: 'Upload Product Thumbnail'
+name: 'Product Thumbnail'
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowUploads: true
+  allowedKinds:
+    - image
+  defaultUploadLocationSource: 'volume:e484cb54-49c9-4f80-8ded-d769de4786f2' # Uploads
+  defaultUploadLocationSubpath: ''
+  limit: '1'
+  localizeRelations: false
+  previewMode: full
+  restrictFiles: '1'
+  selectionLabel: 'Upload Product Thumbnail'
+  showSiteMenu: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  singleUploadLocationSource: 'volume:e484cb54-49c9-4f80-8ded-d769de4786f2' # Uploads
+  singleUploadLocationSubpath: ''
+  source: null
+  sources:
+    - 'volume:e484cb54-49c9-4f80-8ded-d769de4786f2' # Uploads
+  targetSiteId: null
+  useSingleFolder: false
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

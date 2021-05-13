@@ -1,0 +1,32 @@
+{% extends "index" %}
+{% set body_classes = 'inner-page' %}
+{% set pageTitle = entry.title %}
+
+{% block content %}
+    <article class="section">
+        <div class="content-column content-column--narrow">
+            <h1 class="centered">{{ entry.title }}</h1>
+
+            {% if entry.photos.count() > 0 %}
+                <div >
+                    <div class="slider">
+                        <div class="slider__nav">
+                            <button type="button" class="slider__prev">
+                                <img src="{{ siteUrl }}/static/images/arrow-prev.svg" alt="Previous">
+                            </button>
+                            <button type="button" class="slider__next">
+                                <img src="{{ siteUrl }}/static/images/arrow-next.svg" alt="Next">
+                            </button>
+                        </div>
+                        <!-- Slider Component -->
+                        {% include "components/slider" with {
+                            photos: entry.photos.all()
+                        } %}
+                    </div>
+                </div>
+            {% endif %}
+
+            {{ entry.richText }}
+        </div>
+    </article>
+{% endblock %}
