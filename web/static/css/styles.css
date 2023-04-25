@@ -22,9 +22,9 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: var(--white);
+  /*color: var(--white);*/
   -webkit-font-smoothing: antialiased;
-  background: var(--almost-black);
+  /*background: var(--almost-black);*/
 }
 
 body:before {
@@ -47,8 +47,8 @@ body:before {
 }
 
 body.inner-page {
-  background-color: var(--almost-black);
-  background: url('../images/map-bg--dark.jpg') center center no-repeat;
+  /*background-color: var(--almost-black);
+  background: url('../images/map-bg--dark.jpg') center center no-repeat;*/
   background-size: cover;
   background-attachment: fixed;
 }
@@ -95,7 +95,7 @@ h1 {
   font-size: 3.125em;
   line-height: 1.2;
   font-weight: bold;
-  color: var(--white);
+  /*color: var(--white);*/
 }
 
 h1.centered {
@@ -120,7 +120,7 @@ h2 {
   font-size: 1.88em;
   line-height: 1.2;
   font-weight: bold;
-  color: var(--grey-100);
+  /*color: var(--grey-100);*/
 }
 
 h3 {
@@ -128,7 +128,7 @@ h3 {
   font-size: 1.25em;
   line-height: 1.2;
   font-weight: bold;
-  color: var(--grey-100);
+  /*color: var(--grey-100);*/
 }
 
 h4 {
@@ -136,7 +136,7 @@ h4 {
   font-size: 17px;
   line-height: 1.53;
   font-weight: bold;
-  color: var(--grey-100);
+  /*color: var(--grey-100);*/
 }
 
 p, ul, ol {
@@ -595,7 +595,7 @@ article.section {
 .footer {
   padding: 17px 0;
   color: var(--grey-300);
-  background: var(--true-black);
+  /*background: var(--true-black);*/
 }
 
 .footer p {

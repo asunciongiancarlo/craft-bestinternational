@@ -3,6 +3,8 @@
 
 {% block content %}
 
+    {% cache using key 'home' %}
+
         {%  set image = entry.heroImage.one() %}
         <section class="hero" style="background-image: url('{{ image.getUrl('hero') }}')">
             <div class="hero__content content-column">
@@ -55,7 +57,7 @@
 
                             {% set photo = testimony.photo.one() %}
                             {% if photo %}
-                                <img src="{{ photo.getUrl('thumbnail') }}" alt="{{ testimony.clientName }}" class="flex-columns__image">
+                                <img src="{{ photo.getUrl('thumbnail') }}" loading="lazy" alt="{{ testimony.clientName }}" class="flex-columns__image">
                             {% endif %}
 
                             <h4> {{ testimony.clientName }} </h4>
@@ -67,6 +69,6 @@
             </div>
         </section>
 
-
+    {% endcache %}
 
 {% endblock %}

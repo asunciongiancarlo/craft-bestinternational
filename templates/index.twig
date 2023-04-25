@@ -28,7 +28,7 @@
         <div class="header__content content-column">
 
             <a href="{{ siteUrl }}" class="logo">
-                <img src="{{ siteUrl }}static/images/best-logo-1.png" alt="{{ siteName }}" style="max-height: 70px;">
+                <img src="{{ siteUrl }}static/images/best-logo-1.png" loading="lazy" alt="{{ siteName }}" style="max-height: 70px;">
             </a>
 
             <button type="button" class="nav-toggle">
@@ -54,6 +54,25 @@
     {% block content %}
         {#home page#}
     {% endblock %}
+    
+    <div style="text-align:center"> 
+                 <p>Visit Our Facebook Page</p> 
+        <figure style="margin-left: auto;width: 828px;margin-right: auto;"><a href="https://www.facebook.com/bioentomologicalservices" target="_blank" rel="noreferrer noopener"><img src="https://bestinternational.com.ph/web/upload/Picture1.png" alt="Facebook Link"></a></figure>
+    </div>
+    
+    <div style="text-align:center;">
+        <p>Visit Our Office: <br>BEST Compound, Bernardo Village Mayondon, Los Baños Laguna Philippines 4030
+</p>            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3868.2073628031176!2d121.23731985106157!3d14.182629590021032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd60b4543670cb%3A0x5cb4bfa40e23e58f!2sAAA%20Pest%20Management%20Services!5e0!3m2!1sen!2sph!4v1649485742607!5m2!1sen!2sph" width="1200" height="600" style="border:0;text-align:center" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    
+
+    <div style="text-align:center;">
+        <p>Visit Our Office: <br>BEST Fly Control, Brgy. Sto. Rosario, Sta. Rosa, Nueva Ecija
+</p>            
+<iframe style="height:600px;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=BEST+FLY+CONTROL+Nueva+Ecija,+Santa+Rosa,+Nueva+Ecija,+Philippines&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8" width="1200" height="600" style="border:0;text-align:center" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
 
 </div>
 
@@ -65,15 +84,45 @@
                 width="640" height="1200"
                 frameborder="0" marginheight="0" marginwidth="0">Loading…
         </iframe>
-        <br>  <br>  <br>
     </div>
 
-    <div class="content-column centered" style="color:white!important;">
+    <div class="content-column centered" style="color:black!important;">
         <p>{{ footer.richText }}</p>
     </div>
 </footer>
 
 <script src="{{ siteUrl }}static/js/scripts.js"></script>
+
+<!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "311799402327460");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v13.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7MY2GFW33L"></script>

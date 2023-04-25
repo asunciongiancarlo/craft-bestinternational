@@ -1,5 +1,16 @@
+# Fonts
+# Add correct content-type for fonts
+AddType application/vnd.ms-fontobject .eot 
+AddType application/x-font-ttf .ttf
+AddType application/x-font-opentype .otf
+AddType application/font-woff .woff
+AddType application/font-woff2 .woff2
+AddType image/svg+xml .svg
+
+
 <IfModule mod_rewrite.c>
     RewriteEngine On
+#      RewriteBase /web/ localhost need to comment this
 
     # Send would-be 404 requests to Craft
     RewriteCond %{REQUEST_FILENAME} !-f

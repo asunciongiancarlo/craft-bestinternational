@@ -1,7 +1,7 @@
 <div class="slider__reel">
 
     {% for photo in photos %}
-        <img src="{{ photo.getUrl('slider') }}" alt="{{ photo.title }}" class="slider__image" style="max-height: 600px">
+        <img src="{{ photo.getUrl('slider') }}" loading="lazy" alt="{{ photo.title }}" class="slider__image" style="max-height: 600px">
     {% endfor %}
 
 </div>

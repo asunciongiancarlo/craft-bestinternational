@@ -9,7 +9,7 @@
     {% set products = craft.entries.section('products').all() %}
     {% set c = craft.entries.section('products').count() %}
 
-{#    {% cache using key 'products-listing' %}#}
+    {% cache using key 'products-listing' %}
 
         <section class="section">
         <div class="content-column">
@@ -32,7 +32,7 @@
                         <div class="two-columns__image">
                             <a href="{{ product.url }}">
                             {% if photo %}
-                                <img src="{{ photo.url }}" alt="{{ photo.title }}" style="height: 800px;width: 600px;">
+                                <img src="{{ photo.url }}" loading="lazy" alt="{{ photo.title }}" style="height: 700px;">
                             {% else %}
                                 <img src="../web/static/images/photos/mohit-suthar-a1_tFcBSp7w-unsplash.jpg" alt="Photo">
                             {% endif %}
@@ -47,7 +47,7 @@
         </div>
     </section>
 
-{#    {% endcache %}#}
+    {% endcache %}
 
 {% endblock %}
 

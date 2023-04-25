@@ -16,3 +16,4 @@ fieldLayouts:
         sortOrder: 1
 handle: header
 name: Header
+sortOrder: 2

@@ -5,8 +5,8 @@
 {% set pageDescription = entry.shortDescription|default('BEST International Pesticide, Pest Control') ~ " | " ~ siteName %}
 
 {% block content %}
-
-    <article class="section">
+    {% cache using key 'products-preview' %}
+        <article class="section">
         <div class="content-column content-column--narrow">
 
             <h1 class="centered">{{ entry.title }}</h1>
@@ -15,12 +15,12 @@
 
             <div class="centered">
                 {% if photo %}
-                    <img src="{{ photo.url }}" alt="{{ photo.title }}">
+                    <img src="{{ photo.url }}" loading="lazy" alt="{{ photo.title }}">
                 {% else %}
                     <img src="../web/static/images/photos/mohit-suthar-a1_tFcBSp7w-unsplash.jpg" alt="Photo">
                 {% endif %}
             </div>
-            <br>
+
 
             <!-- Slider Component -->
             <div class="slider">
@@ -44,6 +44,6 @@
             {{ entry.richText }}
         </div>
     </article>
-
+    {% endcache %}
 {% endblock %}
 
