@@ -399,6 +399,19 @@ article.section {
   background: url('../images/map-bg--light.jpg') center top no-repeat;
   background-size: cover;
 }
+.home-page .section--light.section--angled-top + div p:first-child{
+  padding-top: 3.75em;
+  margin-bottom: -1em;
+}
+.home-page .section--light.section--angled-top + div + div{
+  margin-bottom: 3.75em;
+}
+.home-page .section--light.section--angled-top + div + div p:first-child,
+.home-page .section--light.section--angled-top + div + div + div p:first-child{
+  padding-bottom: 2.75em;
+  margin-bottom: 0;
+}
+
 
 .section--light h1, .section--light h2, .section--light h3, .section--light h4 {
   color: var(--black);
