@@ -209,6 +209,12 @@ figure {
   background: transparent;
   transition: background-color .3s ease;
 }
+.home-page .header{
+  background-color: rgba(255,255,255, 0.85);
+}
+.home-page .header .nav a{
+  color: #000;
+}
 
 .inner-page .header {
   background: var(--true-black);
@@ -699,7 +705,34 @@ article.section {
   color: #fff !important;
 }
 
+/**additional css**/
+.hero-responsive{
+  position: relative;
+  padding-bottom: 75%;
+  overflow: hidden;
+}
+.hero-responsive.ws{
+  padding-bottom: 56.25%;
+}
+.hero-responsive iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.home-page .hero-wrapper{
+  margin-top: -180px;
+  overflow: hidden;
+  position: relative;
+}
+
 /**CSS MEDIA**/
+@media only screen and (min-width: 1980px){
+  .home-page .hero-wrapper{
+    height: 1020px;
+  }
+}
 @media only screen and (min-width: 1440px) {
   .product-listing-wrapper, .flex-content{
     max-width: 1440px;
@@ -734,12 +767,23 @@ article.section {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+@media only screen and (max-width: 1200px){
+  .home-page .hero-wrapper{
+    margin-top: -80px;
+  }
+}
 @media only screen and (max-width: 979px) {
   .product-listings{
     grid-template-columns: repeat(2, 1fr);
   }
   .section-block .map-iframe{
     width: 100%;
+  }
+  .nav__link{
+    margin-left: 30px;
+  }
+  .home-page .hero-wrapper{
+    margin-top: 0;
   }
 }
 @media only screen and (max-width: 479px) {
