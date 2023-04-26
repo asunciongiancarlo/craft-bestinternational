@@ -737,6 +737,67 @@ article.section {
   width: 100%;
 }
 
+.slick-slider .slick-arrow{
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  margin-top: -25px;
+  appearance: none;
+  padding: 0;
+  border: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-size: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+.slick-dotted .slick-arrow{
+  margin-top: -40px;
+}
+.slick-slider .slick-loading{
+  opacity: 0;
+}
+.home-page .slick-dotted{
+  margin-bottom: -30px;
+}
+.slick-arrow.slick-prev{
+  background-image: url('../images/arrow-prev.svg');
+  left: 5px;
+}
+.slick-arrow.slick-next{
+  background-image: url('../images/arrow-next.svg');
+  right: 5px;
+}
+.slick-dots{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+.slick-dots li{
+  list-style: none;
+  margin: 10px 5px 0 5px;
+  line-height: 1;
+}
+.slick-dots li button{
+  padding: 0;
+  margin: 0;
+  width: 10px;
+  height: 10px;
+  text-align: center;
+  font-size: 0;
+  background: #000;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.slick-dots li.slick-active button{
+  background-color: #fff;
+}
+
 /**CSS MEDIA**/
 @media only screen and (min-width: 1980px){
   .home-page .hero-wrapper{
@@ -800,4 +861,9 @@ article.section {
   .product-listings{
     grid-template-columns: repeat(1, 1fr);
   }
+  .home-page .slick-slider{
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+
 }

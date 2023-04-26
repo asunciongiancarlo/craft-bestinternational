@@ -71,3 +71,15 @@ if(slider && slider_prev && slider_next && slider_reel && slides) {
     slider_reel.style.transform = `translate3d(-${(slide - 1) * (100 / slides.length)}%, 0, 0)`;
   }
 }
+
+
+$(document).ready(function(){
+  if ($('.slick-slider').length){
+    $('.slick-slider').slick({
+      dots: true,
+      lazyLoad: 'ondemand',
+      speed: 1100,
+      infinite: true
+    });
+  }
+});
