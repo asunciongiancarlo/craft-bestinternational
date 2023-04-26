@@ -399,23 +399,29 @@ article.section {
   background: url('../images/map-bg--light.jpg') center top no-repeat;
   background-size: cover;
 }
-.home-page .section--light.section--angled-top + div p:first-child,
-.inner-page .section + div p:first-child{
-  padding-top: 3.75em;
-  margin-bottom: -1em;
-}
-.home-page .section--light.section--angled-top + div + div,
-.inner-page .section + div + div{
-  margin-bottom: 3.75em;
-}
-.home-page .section--light.section--angled-top + div + div p:first-child,
-.home-page .section--light.section--angled-top + div + div + div p:first-child,
-.inner-page .section + div + div p:first-child,
-.inner-page .section + div + div + div p:first-child{
-  padding-bottom: 2.75em;
-  margin-bottom: 0;
-}
 
+.section-block{
+  padding: 30px 0 50px 0;
+}
+.section-block figure{
+  margin: 0;
+}
+.section-block .section-title{
+  margin-bottom: 15px;
+}
+.section-block .map-iframe{
+  max-width: 828px;
+  height: 448px;
+  margin: 0 auto;
+}
+.home-page .section--angled-top + .section-block,
+.inner-page .section + .section-block{
+  padding-top: 80px;
+}
+.home-page .section--angled-top + .section-block .section-title,
+.inner-page .section + .section-block .section-title{
+  margin-bottom: 40px;
+}
 
 .section--light h1, .section--light h2, .section--light h3, .section--light h4 {
   color: var(--black);
