@@ -7,20 +7,19 @@
 {% block content %}
     {% cache using key 'products-preview' %}
         <article class="section">
-        <div class="content-column content-column--narrow">
+        <div class="content-column content-column--narrow product-overview">
 
             <h1 class="centered">{{ entry.title }}</h1>
 
             {% set photo = entry.productThumbnail.one() %}
 
-            <div class="centered">
+            <div class="centered image-content">
                 {% if photo %}
                     <img src="{{ photo.url }}" loading="lazy" alt="{{ photo.title }}">
                 {% else %}
                     <img src="../web/static/images/photos/mohit-suthar-a1_tFcBSp7w-unsplash.jpg" alt="Photo">
                 {% endif %}
             </div>
-
 
             <!-- Slider Component -->
             <div class="slider">
@@ -42,6 +41,11 @@
             </div>
 
             {{ entry.richText }}
+
+            <!-- responsive embed video -->
+            <div class="hero-responsive ws">
+                <iframe width="1280" height="720" src="https://www.youtube.com/embed/VEyy4m0U0HQ" title="Pesticide Companies Don&#39;t Want You to Know These Secrets | Complete Guide to Organic Pest Control" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+            </div>
         </div>
     </article>
     {% endcache %}
