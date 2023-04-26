@@ -612,6 +612,7 @@ article.section {
 .footer {
   padding: 17px 0;
   color: var(--grey-300);
+  padding-bottom: 0;
   /*background: var(--true-black);*/
 }
 
@@ -622,4 +623,24 @@ article.section {
 
 .link {
   color: white!important;
+}
+
+.footer .content-column{
+  background-color: #000;
+  margin: 0;
+  padding: 60px 30px;
+  max-width: none;
+  color: #fff !important;
+
+}
+.footer .content-column p,
+.footer .content-column a{
+  color: #888 !important;
+}
+.footer .content-column a{
+  color: #ffca81 !important;
+}
+
+.footer .content-column a:hover{
+  color: #fff !important;
 }
