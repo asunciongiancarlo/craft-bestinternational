@@ -815,6 +815,55 @@ article.section {
 .slick-dots li.slick-active button{
   background-color: #fff;
 }
+.content-form{
+  background-color: var(--gold);
+  padding: 60px 30px;
+}
+.content-form .title{
+  color: #000;
+  text-align: center;
+  font-size: 1.88em;
+}
+.content-form form{
+  max-width: 700px;
+  margin: 0 auto;
+}
+.content-form input,
+.content-form textarea{
+  border: 2px #db9536 solid;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #000;
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  appearance: none;
+  font-family: "Roboto";
+  box-shadow: none;
+  outline: none;
+  opacity: 0.85;
+}
+.content-form input:focus,
+.content-form input:focus-visible,
+.content-form textarea:focus{
+  border-color: #000;
+  opacity: 1;
+}
+.content-form button{
+  background-color: #000;
+  color: #fff;
+  appearance: none;
+  padding: 15px 30px;
+  border: 0;
+  border-radius: 4px;
+  font-family: 'Roboto';
+  font-weight: 700;
+  cursor: pointer;
+}
+.footer .content-form{
+  margin-top: 30px;
+}
+
 
 /**CSS MEDIA**/
 @media only screen and (min-width: 1980px) and (min-height: 1024px){

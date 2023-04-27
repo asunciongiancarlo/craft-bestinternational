@@ -82,12 +82,23 @@
 
 <footer class="footer">
 
-    <div class="centered">
-        <br>
-        <iframe style="overflow:hidden;" src="https://docs.google.com/forms/d/e/1FAIpQLScxTAcsp_BD6lb_ENq4TGiHSu-4ShbKr_Cs6lYPfcLFKzbqeg/viewform?embedded=true"
-                width="640" height="1200"
-                frameborder="0" marginheight="0" marginwidth="0">Loading…
-        </iframe>
+{#    <div class="centered">#}
+{#        <br>#}
+{#        <iframe style="overflow:hidden;" src="https://docs.google.com/forms/d/e/1FAIpQLScxTAcsp_BD6lb_ENq4TGiHSu-4ShbKr_Cs6lYPfcLFKzbqeg/viewform?embedded=true"#}
+{#                width="640" height="1200"#}
+{#                frameborder="0" marginheight="0" marginwidth="0">Loading…#}
+{#        </iframe>#}
+{#    </div>#}
+
+    <div class="content-form">
+        <h3 class="title">Contact Us</h3>
+        <form action="">
+            <input type="text" placeholder="Fullname*" required aria-errormessage="test" />
+            <input type="email" placeholder="Email Address*" required />
+            <input type="tel" placeholder="Mobile Number*" required />
+            <textarea name="" id="" cols="30" rows="6" placeholder="Enquiry (Pampatay langaw or pest control)*"></textarea>
+            <button type="submit">Submit</button>
+        </form>
     </div>
 
     <div class="content-column centered" style="color:black!important;">
