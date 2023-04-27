@@ -217,6 +217,10 @@ figure {
 }
 .home-page .header .nav a{
   color: #000;
+  transition: color .12s;
+}
+.home-page .header .nav a:hover{
+  color: var(--gold);
 }
 
 .inner-page .header {
@@ -249,7 +253,7 @@ figure {
   font-weight: 500;
   color: var(--white);
   border-bottom: 2px solid transparent;
-  transition: border-color .12s ease;
+  transition: color .12s ease;
 }
 
 .nav__link:visited {
@@ -258,6 +262,9 @@ figure {
 
 .nav__link.nav__link--active {
   border-bottom-color: var(--gold);
+}
+.nav__link.nav__link:hover{
+  color: var(--gold);
 }
 
 /* Nav Toggle */
@@ -709,6 +716,15 @@ article.section {
 }
 
 /**additional css**/
+.for-homepage{
+  display: none;
+}
+.home-page .for-general{
+  display: none;
+}
+.home-page .for-homepage{
+  display: block;
+}
 .hero-responsive{
   position: relative;
   padding-bottom: 75%;
@@ -838,6 +854,11 @@ article.section {
 @media only screen and (max-width: 1279px) {
   .product-listings{
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 768px){
+  .home-page .header .nav a{
+    color: #fff;
   }
 }
 @media only screen and (max-width: 979px) {
