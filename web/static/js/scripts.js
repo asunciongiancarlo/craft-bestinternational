@@ -78,8 +78,10 @@ $(document).ready(function(){
     $('.slick-slider').slick({
       dots: true,
       lazyLoad: 'ondemand',
-      speed: 1100,
-      infinite: true
+      speed: 2000,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 2000
     });
   }
 });
