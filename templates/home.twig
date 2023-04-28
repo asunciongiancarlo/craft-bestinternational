@@ -59,7 +59,103 @@
 
 
         <section class="section section--more-padding section--light section--angled-top">
-            <div class="content-column centered">
+            <div class="content-column filter-wrapper">
+                <div class="banner"><img src="{{ siteUrl }}static/images/banner-products.png" alt="" ></div>
+                <div class="filter-section">
+                    <div class="filter-block">
+                        <div class="title item">Pest</div>
+                        <div class="options item">
+                            <div class="option">
+                                <input type="checkbox" value="Fly" />
+                                <span>Fly</span>
+                            </div>
+                            <div class="option">
+                                <input type="checkbox" value="Fly" />
+                                <span>Ants</span>
+                            </div>
+                            <div class="option">
+                                <input type="checkbox" value="Fly" />
+                                <span>Mosquito</span>
+                            </div>
+                            <div class="option">
+                                <input type="checkbox" value="Fly" />
+                                <span>Larva</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-block">
+                        <div class="title item">Category</div>
+                        <div class="options item">
+                            <div class="option">
+                                <input type="checkbox" value="Fly" />
+                                <span>Insecticide</span>
+                            </div>
+                            <div class="option">
+                                <input type="checkbox" value="Fly" />
+                                <span>Termiticide</span>
+                            </div>
+                            <div class="option">
+                                <input type="checkbox" value="Fly" />
+                                <span>Larvicide</span>
+                            </div>
+                            <div class="option">
+                                <input type="checkbox" value="Fly" />
+                                <span>Adulticide</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-block">
+                        <div class="title item">Type</div>
+                        <div class="options item">
+                            <div class="option">
+                                <input type="checkbox" value="Fly" />
+                                <span>Liquid</span>
+                            </div>
+                            <div class="option">
+                                <input type="checkbox" value="Fly" />
+                                <span>Powder</span>
+                            </div>
+                            <div class="option">
+                                <input type="checkbox" value="Fly" />
+                                <span>Gel</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="two-columns product-listings">
+                    {% set products = craft.entries.section('products').all() %}
+                    {% set c = craft.entries.section('products').count() %}
+
+                    {% cache using key 'products-listing' %}
+                        {% for product in products  %}
+                            <div class="two-columns__item product-item">
+
+                                {% set photo = product.productThumbnail.one() %}
+                                <div class="two-columns__content product-item__content">
+                                    <h2>{{ product.title }}</h2>
+                                    <p>{{ product.shortDescription }}<p>
+                                        <a href="{{ product.url }}" class="cta-link">View</a>
+                                    </p>
+                                </div>
+
+
+                                <div class="two-columns__image product-item__image">
+                                    <a href="{{ product.url }}">
+                                        {% if photo %}
+                                            <img src="{{ photo.url }}" loading="lazy" alt="{{ photo.title }}">
+                                        {% else %}
+                                            <img src="../web/static/images/photos/mohit-suthar-a1_tFcBSp7w-unsplash.jpg" alt="Photo">
+                                        {% endif %}
+                                    </a>
+                                </div>
+
+                            </div>
+                        {% endfor %}
+                    {% endcache %}
+
+                </div>
+            </div>
+            <div class="content-column centered testimonials">
 
                 {{ entry.testimonyintro }}
 
