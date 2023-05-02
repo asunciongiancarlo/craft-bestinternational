@@ -84,4 +84,13 @@ $(document).ready(function(){
       autoplaySpeed: 2000
     });
   }
+
+  //Accordion Block
+  if ( $('.accordion-block').length ){
+    $('.accordion-block-header').on('click', function (){
+      $(this).toggleClass('active-header');
+      const accordion_content =  $(this).next('.accordion-block-content');
+      accordion_content.slideToggle();
+    })
+  }
 });

@@ -945,6 +945,36 @@ article.section {
   position: absolute;
   top: -20px;
 }
+/**Accordion Block**/
+.accordion-block{
+  margin-bottom: 60px;
+}
+.accordion-block-header{
+  border: 1px #cccccc solid;
+  padding: 15px;
+  margin-bottom: -1px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+.accordion-block-header:after{
+  content: '+';
+}
+.accordion-block-header.active-header{
+  background-color: var(--gold);
+  border-color: var(--gold);
+}
+.accordion-block-header.active-header:after{
+  content: '-';
+}
+.accordion-block-content{
+  padding: 15px;
+  display: none;
+  border: 1px #cccccc solid;
+  margin-bottom: -1px;
+}
+
+
 /**CSS MEDIA**/
 @media only screen and (min-width: 768px){
   .filter-block .item.title{
