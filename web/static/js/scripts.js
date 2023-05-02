@@ -93,4 +93,13 @@ $(document).ready(function(){
       accordion_content.slideToggle();
     })
   }
+
+  //Isotope
+  if ($('.grid-iso').length){
+    $('.grid-iso').isotope({
+      // options
+      itemSelector: '.grid-iso .product-item',
+      layoutMode: 'fitRows'
+    });
+  }
 });

@@ -524,6 +524,11 @@ article.section {
 .home-page .product-listings{
   margin-bottom: 40px;
 }
+.product-listings.grid-iso .product-item{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
 
 @media screen and (max-width: 1200px) {
 
@@ -976,6 +981,11 @@ article.section {
 
 
 /**CSS MEDIA**/
+@media only screen and (min-width: 480px){
+  .product-listings.grid-iso .product-item{
+    width: 50%;
+  }
+}
 @media only screen and (min-width: 768px){
   .filter-block .item.title{
     flex: 0 120px;
@@ -984,6 +994,22 @@ article.section {
     flex: 1;
   }
 }
+@media only screen and (min-width: 980px){
+  .product-listings.grid-iso .product-item{
+    width: 33.33%;
+  }
+}
+@media only screen and (min-width: 1280px){
+  .product-listings.grid-iso .product-item{
+    width: 25%;
+  }
+}
+@media only screen and (min-width: 1440px){
+  .product-listings.grid-iso .product-item{
+    width: 20%;
+  }
+}
+
 @media only screen and (min-width: 1980px) and (min-height: 1024px){
   .home-page .hero-wrapper{
     height: calc(100vh - 80px);
