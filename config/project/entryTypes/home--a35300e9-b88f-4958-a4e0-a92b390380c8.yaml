@@ -27,7 +27,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 25ebcb13-2072-4174-8ea8-f49670eb7326 # Hero Title
+            fieldUid: 25ebcb13-2072-4174-8ea8-f49670eb7326
             instructions: null
             label: null
             required: false
@@ -36,7 +36,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: c3adcd66-f02c-4190-ab16-12dfea20f0f6 # Hero Image
+            fieldUid: c3adcd66-f02c-4190-ab16-12dfea20f0f6
             instructions: null
             label: null
             required: false
@@ -49,7 +49,7 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: 41ed8d4a-2b1d-41e1-b383-0850554b38d1 # Rich Text
+            fieldUid: 41ed8d4a-2b1d-41e1-b383-0850554b38d1
             instructions: null
             label: null
             required: false
@@ -58,7 +58,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 28370815-d073-4ef3-9d4a-dad032192bd1 # Photos
+            fieldUid: 28370815-d073-4ef3-9d4a-dad032192bd1
             instructions: null
             label: null
             required: false
@@ -71,7 +71,7 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: 6b2bff82-5187-4701-aa70-a02b718985b2 # TestimonyIntro
+            fieldUid: 6b2bff82-5187-4701-aa70-a02b718985b2
             instructions: null
             label: null
             required: false
@@ -80,7 +80,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: ba4b4c26-d58e-4403-aff6-583cf721d61f # Testimonies
+            fieldUid: ba4b4c26-d58e-4403-aff6-583cf721d61f
             instructions: null
             label: null
             required: false
@@ -93,7 +93,7 @@ fieldLayouts:
 handle: home
 hasTitleField: true
 name: Home
-section: a1a2b3e6-5103-4e08-b6ed-b3f4473ef0ff # Home
+section: a1a2b3e6-5103-4e08-b6ed-b3f4473ef0ff
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

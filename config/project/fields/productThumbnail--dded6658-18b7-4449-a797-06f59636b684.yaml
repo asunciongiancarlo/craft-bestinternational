@@ -1,5 +1,5 @@
 contentColumnType: string
-fieldGroup: 2f6e2f12-9aba-4a80-8f9d-69612e59fd11 # Common
+fieldGroup: 2f6e2f12-9aba-4a80-8f9d-69612e59fd11
 handle: productThumbnail
 instructions: 'Upload Product Thumbnail'
 name: 'Product Thumbnail'
@@ -9,7 +9,7 @@ settings:
   allowUploads: true
   allowedKinds:
     - image
-  defaultUploadLocationSource: 'volume:e484cb54-49c9-4f80-8ded-d769de4786f2' # Uploads
+  defaultUploadLocationSource: 'volume:e484cb54-49c9-4f80-8ded-d769de4786f2'
   defaultUploadLocationSubpath: ''
   limit: '1'
   localizeRelations: false
@@ -19,11 +19,11 @@ settings:
   showSiteMenu: false
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
-  singleUploadLocationSource: 'volume:e484cb54-49c9-4f80-8ded-d769de4786f2' # Uploads
+  singleUploadLocationSource: 'volume:e484cb54-49c9-4f80-8ded-d769de4786f2'
   singleUploadLocationSubpath: ''
   source: null
   sources:
-    - 'volume:e484cb54-49c9-4f80-8ded-d769de4786f2' # Uploads
+    - 'volume:e484cb54-49c9-4f80-8ded-d769de4786f2'
   targetSiteId: null
   useSingleFolder: false
   validateRelatedElements: false

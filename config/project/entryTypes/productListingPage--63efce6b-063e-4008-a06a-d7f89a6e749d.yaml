@@ -31,7 +31,7 @@ fieldLayouts:
 handle: productListingPage
 hasTitleField: true
 name: 'Product Listing Page'
-section: 60eb453e-5b55-49d0-9efe-6199fa72759f # Product Listing Page
+section: 60eb453e-5b55-49d0-9efe-6199fa72759f
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

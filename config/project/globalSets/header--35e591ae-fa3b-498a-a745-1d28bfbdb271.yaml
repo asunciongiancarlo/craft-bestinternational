@@ -4,7 +4,7 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: 1f3041b9-77c0-4580-ad2e-f114e03902b9 # Nav Links
+            fieldUid: 1f3041b9-77c0-4580-ad2e-f114e03902b9
             instructions: null
             label: null
             required: false
@@ -16,4 +16,3 @@ fieldLayouts:
         sortOrder: 1
 handle: header
 name: Header
-sortOrder: 2

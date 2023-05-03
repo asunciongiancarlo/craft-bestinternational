@@ -4,7 +4,7 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: 41ed8d4a-2b1d-41e1-b383-0850554b38d1 # Rich Text
+            fieldUid: 41ed8d4a-2b1d-41e1-b383-0850554b38d1
             instructions: null
             label: null
             required: false
@@ -16,4 +16,3 @@ fieldLayouts:
         sortOrder: 1
 handle: footer
 name: Footer
-sortOrder: 1

@@ -1,5 +1,5 @@
 contentColumnType: text
-fieldGroup: 2f6e2f12-9aba-4a80-8f9d-69612e59fd11 # Common
+fieldGroup: 2f6e2f12-9aba-4a80-8f9d-69612e59fd11
 handle: richText
 instructions: ''
 name: 'Rich Text'
@@ -7,7 +7,7 @@ searchable: false
 settings:
   availableTransforms: '*'
   availableVolumes:
-    - e484cb54-49c9-4f80-8ded-d769de4786f2 # Uploads
+    - e484cb54-49c9-4f80-8ded-d769de4786f2
   cleanupHtml: true
   columnType: text
   configSelectionMode: choose
