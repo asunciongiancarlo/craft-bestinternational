@@ -65,6 +65,45 @@
             <div class="hero-responsive ws">
                 <iframe width="1280" height="720" src="https://www.youtube.com/embed/VEyy4m0U0HQ" title="Pesticide Companies Don&#39;t Want You to Know These Secrets | Complete Guide to Organic Pest Control" frameborder="0" allow="autoplay" allowfullscreen></iframe>
             </div>
+
+            <!--Related Products-->
+
+           <div class="related-products">
+               <h3 class="title">Related Products</h3>
+               <div class="two-columns product-listings">
+                   {% set products = craft.entries.section('products').all() %}
+                   {% set c = craft.entries.section('products').count() %}
+
+                   {% cache using key 'products-listing' %}
+                       {% for product in products  %}
+                           <div class="two-columns__item product-item">
+
+                               {% set photo = product.productThumbnail.one() %}
+                               <div class="two-columns__content product-item__content">
+                                   <h2>{{ product.title }}</h2>
+                                   <p>{{ product.shortDescription }}<p>
+                                       <a href="{{ product.url }}" class="cta-link">View</a>
+                                   </p>
+                               </div>
+
+
+                               <div class="two-columns__image product-item__image">
+                                   <a href="{{ product.url }}">
+                                       {% if photo %}
+                                           <img src="{{ photo.url }}" loading="lazy" alt="{{ photo.title }}">
+                                       {% else %}
+                                           <img src="../web/static/images/photos/mohit-suthar-a1_tFcBSp7w-unsplash.jpg" alt="Photo">
+                                       {% endif %}
+                                   </a>
+                               </div>
+
+                           </div>
+                       {% endfor %}
+                   {% endcache %}
+
+               </div>
+           </div>
+
         </div>
     </article>
     {% endcache %}
