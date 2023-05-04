@@ -1,5 +1,6 @@
+columnSuffix: null
 contentColumnType: text
-fieldGroup: 2f6e2f12-9aba-4a80-8f9d-69612e59fd11
+fieldGroup: 2f6e2f12-9aba-4a80-8f9d-69612e59fd11 # Common
 handle: shortDescription
 instructions: ''
 name: 'Short Description'

@@ -1,5 +1,6 @@
+columnSuffix: null
 contentColumnType: string
-fieldGroup: 2a24854f-77e9-44a6-8ca3-c715328f5924
+fieldGroup: 2a24854f-77e9-44a6-8ca3-c715328f5924 # Home Page
 handle: testimonies
 instructions: ''
 name: Testimonies
@@ -8,6 +9,7 @@ settings:
   contentTable: '{{%matrixcontent_testimonies}}'
   maxBlocks: ''
   minBlocks: ''
+  propagationKeyFormat: null
   propagationMethod: all
 translationKeyFormat: null
 translationMethod: site

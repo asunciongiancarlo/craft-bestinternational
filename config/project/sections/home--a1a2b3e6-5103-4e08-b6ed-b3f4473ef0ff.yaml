@@ -1,9 +1,10 @@
+defaultPlacement: end
 enableVersioning: true
 handle: home
 name: Home
 propagationMethod: all
 siteSettings:
-  e92c1b76-66ef-415c-9b13-f7b5b74aa8d4:
+  e92c1b76-66ef-415c-9b13-f7b5b74aa8d4: # BEST International
     enabledByDefault: true
     hasUrls: true
     template: home

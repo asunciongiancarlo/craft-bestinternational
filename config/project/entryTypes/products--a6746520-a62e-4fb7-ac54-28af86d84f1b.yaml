@@ -27,7 +27,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: dded6658-18b7-4449-a797-06f59636b684
+            fieldUid: dded6658-18b7-4449-a797-06f59636b684 # Product Thumbnail
             instructions: null
             label: null
             required: false
@@ -36,7 +36,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 28370815-d073-4ef3-9d4a-dad032192bd1
+            fieldUid: 28370815-d073-4ef3-9d4a-dad032192bd1 # Photos
             instructions: null
             label: null
             required: false
@@ -45,7 +45,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 0bb389f2-72ee-41bb-bf11-535b4e23dc88
+            fieldUid: 0bb389f2-72ee-41bb-bf11-535b4e23dc88 # Short Description
             instructions: null
             label: null
             required: false
@@ -54,7 +54,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 41ed8d4a-2b1d-41e1-b383-0850554b38d1
+            fieldUid: 41ed8d4a-2b1d-41e1-b383-0850554b38d1 # Rich Text
             instructions: null
             label: null
             required: false
@@ -67,7 +67,7 @@ fieldLayouts:
 handle: products
 hasTitleField: true
 name: Products
-section: 14d88efa-badf-4ac2-aed1-fc27d3d04d95
+section: 14d88efa-badf-4ac2-aed1-fc27d3d04d95 # Products
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

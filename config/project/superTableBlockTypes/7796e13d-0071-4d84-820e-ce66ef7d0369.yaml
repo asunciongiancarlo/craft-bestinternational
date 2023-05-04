@@ -1,11 +1,11 @@
-field: b52a04a6-f337-4ba1-b627-808750867661
+field: b52a04a6-f337-4ba1-b627-808750867661 # Test
 fieldLayouts:
   23372804-8535-4d4b-b9e1-0d4ba05606b1:
     tabs:
       -
         elements:
           -
-            fieldUid: d1c4ff32-7929-4ce0-b255-62d9e5d3a1a9
+            fieldUid: d1c4ff32-7929-4ce0-b255-62d9e5d3a1a9 # may class
             instructions: null
             label: null
             required: false
@@ -16,7 +16,8 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  d1c4ff32-7929-4ce0-b255-62d9e5d3a1a9:
+  d1c4ff32-7929-4ce0-b255-62d9e5d3a1a9: # may class
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: mayClass

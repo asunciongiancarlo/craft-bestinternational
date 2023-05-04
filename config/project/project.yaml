@@ -1,8 +1,60 @@
-dateModified: 1683080291
+dateModified: 1683093585
 email:
-  fromEmail: asunciongiancarlo@gmail.com
-  fromName: bestinternational
-  transportType: craft\mail\transportadapters\Sendmail
+  fromEmail: admin@bestinternational.com.ph
+  fromName: 'Best International'
+  replyToEmail: null
+  template: null
+  transportSettings:
+    encryptionMethod: ssl
+    host: smtp.hostinger.com
+    password: G14nc4rl0!
+    port: '465'
+    timeout: '10'
+    useAuthentication: '1'
+    username: admin@bestinternational.com.ph
+  transportType: craft\mail\transportadapters\Smtp
+meta:
+  __names__:
+    0bb389f2-72ee-41bb-bf11-535b4e23dc88: 'Short Description' # Short Description
+    0eaa626e-62a9-4f6e-a3f6-34636e4bc86d: Footer # Footer
+    1af2d1a7-080f-4594-8b92-11944576d9d7: 'Client Name' # Client Name
+    1f3041b9-77c0-4580-ad2e-f114e03902b9: 'Nav Links' # Nav Links
+    2a24854f-77e9-44a6-8ca3-c715328f5924: 'Home Page' # Home Page
+    2dead168-5489-4ffa-9ad7-d3e6c3f4bdaf: 'Content Image' # Content Image
+    2f6e2f12-9aba-4a80-8f9d-69612e59fd11: Common # Common
+    5c5e42f2-45d8-4fcc-90ce-cdb90850aa64: Photo # Photo
+    6b2bff82-5187-4701-aa70-a02b718985b2: TestimonyIntro # TestimonyIntro
+    8ae7cf46-c943-46ca-899a-4b2ea79a30ab: 'Uploads $ASSET' # Uploads $ASSET
+    8e3fb60c-aba2-4966-8c5d-939ad13044a5: 'Link Text' # Link Text
+    9b3609d5-c175-4686-b2b5-458f57ed38ea: 'General Pages' # General Pages
+    9de6131b-76b1-488f-adf2-e0873fd766ad: Hero # Hero
+    14d88efa-badf-4ac2-aed1-fc27d3d04d95: Products # Products
+    25ebcb13-2072-4174-8ea8-f49670eb7326: 'Hero Title' # Hero Title
+    35e591ae-fa3b-498a-a745-1d28bfbdb271: Header # Header
+    41ed8d4a-2b1d-41e1-b383-0850554b38d1: 'Rich Text' # Rich Text
+    60eb453e-5b55-49d0-9efe-6199fa72759f: 'Product Listing Page' # Product Listing Page
+    63efce6b-063e-4008-a06a-d7f89a6e749d: 'Product Listing Page' # Product Listing Page
+    699da4b2-b54d-4ecb-9c6d-8538db9fa7ce: Slider # Slider
+    727496e1-4532-4298-b98e-3f539cbebd3c: 'Featured Products' # Featured Products
+    28370815-d073-4ef3-9d4a-dad032192bd1: Photos # Photos
+    a1a2b3e6-5103-4e08-b6ed-b3f4473ef0ff: Home # Home
+    a35300e9-b88f-4958-a4e0-a92b390380c8: Home # Home
+    a6746520-a62e-4fb7-ac54-28af86d84f1b: Products # Products
+    b52a04a6-f337-4ba1-b627-808750867661: Test # Test
+    ba4b4c26-d58e-4403-aff6-583cf721d61f: Testimonies # Testimonies
+    bb66d762-7f53-4b2e-9297-2a4c58ce7e42: 'General Pages' # General Pages
+    be240735-bdbc-4708-b7d3-6700704bd3c5: Thumbnail # Thumbnail
+    c3adcd66-f02c-4190-ab16-12dfea20f0f6: 'Hero Image' # Hero Image
+    c299b020-3601-4a71-bfbe-5d5a8a17996c: 'Link Destination' # Link Destination
+    c539c0ef-c990-432f-a29d-b82796257fbd: Testimony # Testimony
+    d1c4ff32-7929-4ce0-b255-62d9e5d3a1a9: 'may class' # may class
+    d9401a09-4c06-4a62-8aa6-f1d1423ab765: TestimonyContent # TestimonyContent
+    dded6658-18b7-4449-a797-06f59636b684: 'Product Thumbnail' # Product Thumbnail
+    e92c1b76-66ef-415c-9b13-f7b5b74aa8d4: 'BEST International' # BEST International
+    e100cac8-d352-4525-9bd6-e4788be97b5a: Link # Link
+    e484cb54-49c9-4f80-8ded-d769de4786f2: Uploads # Uploads
+    f3839b93-5518-478b-bc0a-58a1e1311782: bestinternational # bestinternational
+    ff78e4f9-dee5-41b0-a65b-4f03fa1da821: 'Public Schema' # Public Schema
 plugins:
   contact-form:
     edition: standard
@@ -117,7 +169,7 @@ system:
   live: true
   name: 'BEST International'
   retryDuration: null
-  schemaVersion: 3.6.8
+  schemaVersion: 3.7.8
   timeZone: Asia/Manila
 users:
   allowPublicRegistration: false

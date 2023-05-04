@@ -1,11 +1,11 @@
-field: 1f3041b9-77c0-4580-ad2e-f114e03902b9
+field: 1f3041b9-77c0-4580-ad2e-f114e03902b9 # Nav Links
 fieldLayouts:
   bc1dec41-21fb-4efb-a1d7-6b4804d13d0d:
     tabs:
       -
         elements:
           -
-            fieldUid: 8e3fb60c-aba2-4966-8c5d-939ad13044a5
+            fieldUid: 8e3fb60c-aba2-4966-8c5d-939ad13044a5 # Link Text
             instructions: null
             label: null
             required: false
@@ -14,7 +14,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: c299b020-3601-4a71-bfbe-5d5a8a17996c
+            fieldUid: c299b020-3601-4a71-bfbe-5d5a8a17996c # Link Destination
             instructions: null
             label: null
             required: false
@@ -23,7 +23,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: b52a04a6-f337-4ba1-b627-808750867661
+            fieldUid: b52a04a6-f337-4ba1-b627-808750867661 # Test
             instructions: null
             label: null
             required: false
@@ -34,7 +34,8 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  8e3fb60c-aba2-4966-8c5d-939ad13044a5:
+  8e3fb60c-aba2-4966-8c5d-939ad13044a5: # Link Text
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: linkText
@@ -53,7 +54,8 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  b52a04a6-f337-4ba1-b627-808750867661:
+  b52a04a6-f337-4ba1-b627-808750867661: # Test
+    columnSuffix: null
     contentColumnType: string
     fieldGroup: null
     handle: test
@@ -72,7 +74,8 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: verbb\supertable\fields\SuperTableField
-  c299b020-3601-4a71-bfbe-5d5a8a17996c:
+  c299b020-3601-4a71-bfbe-5d5a8a17996c: # Link Destination
+    columnSuffix: null
     contentColumnType: string
     fieldGroup: null
     handle: linkDestination

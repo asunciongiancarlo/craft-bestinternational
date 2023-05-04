@@ -1,5 +1,6 @@
+columnSuffix: null
 contentColumnType: string
-fieldGroup: 2a24854f-77e9-44a6-8ca3-c715328f5924
+fieldGroup: 2a24854f-77e9-44a6-8ca3-c715328f5924 # Home Page
 handle: heroImage
 instructions: ''
 name: 'Hero Image'
@@ -9,7 +10,7 @@ settings:
   allowUploads: true
   allowedKinds:
     - image
-  defaultUploadLocationSource: 'volume:e484cb54-49c9-4f80-8ded-d769de4786f2'
+  defaultUploadLocationSource: 'volume:e484cb54-49c9-4f80-8ded-d769de4786f2' # Uploads
   defaultUploadLocationSubpath: ''
   limit: '1'
   localizeRelations: false
@@ -19,11 +20,11 @@ settings:
   showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
-  singleUploadLocationSource: 'volume:e484cb54-49c9-4f80-8ded-d769de4786f2'
+  singleUploadLocationSource: 'volume:e484cb54-49c9-4f80-8ded-d769de4786f2' # Uploads
   singleUploadLocationSubpath: ''
   source: null
   sources:
-    - 'volume:e484cb54-49c9-4f80-8ded-d769de4786f2'
+    - 'volume:e484cb54-49c9-4f80-8ded-d769de4786f2' # Uploads
   targetSiteId: null
   useSingleFolder: true
   validateRelatedElements: false

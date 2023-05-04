@@ -5,5 +5,5 @@ hasUrls: true
 language: en-US
 name: 'BEST International'
 primary: true
-siteGroup: f3839b93-5518-478b-bc0a-58a1e1311782
+siteGroup: f3839b93-5518-478b-bc0a-58a1e1311782 # bestinternational
 sortOrder: 1

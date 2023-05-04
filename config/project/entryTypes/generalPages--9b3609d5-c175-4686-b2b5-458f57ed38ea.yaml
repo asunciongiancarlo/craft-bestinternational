@@ -27,7 +27,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 28370815-d073-4ef3-9d4a-dad032192bd1
+            fieldUid: 28370815-d073-4ef3-9d4a-dad032192bd1 # Photos
             instructions: null
             label: null
             required: false
@@ -36,7 +36,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 41ed8d4a-2b1d-41e1-b383-0850554b38d1
+            fieldUid: 41ed8d4a-2b1d-41e1-b383-0850554b38d1 # Rich Text
             instructions: null
             label: null
             required: false
@@ -49,7 +49,7 @@ fieldLayouts:
 handle: generalPages
 hasTitleField: true
 name: 'General Pages'
-section: bb66d762-7f53-4b2e-9297-2a4c58ce7e42
+section: bb66d762-7f53-4b2e-9297-2a4c58ce7e42 # General Pages
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null
