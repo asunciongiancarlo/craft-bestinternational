@@ -6,45 +6,22 @@
     {% cache using key 'home' %}
 
         {%  set image = entry.heroImage.one() %}
-{#        <section class="hero" style="background-image: url('{{ image.getUrl('hero') }}')">#}
-{#            <div class="hero__content content-column">#}
-{#                <h1> {{ entry.heroTitle }}</h1>#}
-{#            </div>#}
-{#        </section>#}
+
        <div class="hero-wrapper">
            <div class="hero-responsive ws">
-               <iframe src="https://player.vimeo.com/video/821510459?&api=1&background=1&muted=1&loop=1&autoplay=1" frameborder="0" allow="autoplay" allowfullscreen title="Introducing.mp4"></iframe></div>
-           </div>
+               <iframe src="https://player.vimeo.com/video/821510459?&api=1&background=1&muted=1&loop=1&autoplay=1" frameborder="0" allow="autoplay" allowfullscreen title="Best International Products"></iframe>
+            </div>
        </div>
-
-
         <section class="featured-story">
                 <div class="featured-story__flex content-column">
 
                     <div class="featured-story__content">
                         {{ entry.richText }}
                         <p>
-                            <a href="products/" class="cta-link">View</a>
+                            <a href="products/" class="cta-link">View Products</a>
                         </p>
-                    </div>
-
-                    {% if entry.photos.count() > 0 %}
+                    </div>                    {% if entry.photos.count() > 0 %}
                         <div class="featured-story__slider">
-{#                            <div class="slider">#}
-{#                                <div class="slider__nav">#}
-{#                                    <button type="button" class="slider__prev">#}
-{#                                        <img src="{{ siteUrl }}/static/images/arrow-prev.svg" alt="Previous">#}
-{#                                    </button>#}
-{#                                    <button type="button" class="slider__next">#}
-{#                                        <img src="{{ siteUrl }}/static/images/arrow-next.svg" alt="Next">#}
-{#                                    </button>#}
-{#                                </div>#}
-{#                            <!-- Slider Component -->#}
-{#                            {% include "components/slider" with {#}
-{#                                photos: entry.photos.all()#}
-{#                            } %}#}
-{#                            </div>#}
-
                             <div class="slick-slider">
                                 {% for photo in entry.photos.all() %}
                                     <div><img data-lazy="{{ photo.getUrl('slider') }}" alt="{{ photo.title }}"></div>
@@ -53,10 +30,8 @@
 
                         </div>
                     {% endif %}
-
                 </div>
             </section>
-
 
         <section class="section section--more-padding section--light section--angled-top">
             <div class="content-column filter-wrapper">
@@ -129,7 +104,6 @@
                     {% cache using key 'products-listing' %}
                         {% for product in products  %}
                             <div class="two-columns__item product-item">
-
                                 {% set photo = product.productThumbnail.one() %}
                                 <div class="two-columns__content product-item__content">
                                     <h2>{{ product.title }}</h2>
@@ -137,8 +111,6 @@
                                         <a href="{{ product.url }}" class="cta-link">View</a>
                                     </p>
                                 </div>
-
-
                                 <div class="two-columns__image product-item__image">
                                     <a href="{{ product.url }}">
                                         {% if photo %}
@@ -148,7 +120,6 @@
                                         {% endif %}
                                     </a>
                                 </div>
-
                             </div>
                         {% endfor %}
                     {% endcache %}
@@ -162,22 +133,18 @@
                 <div class="flex-columns">
                     {% for testimony in entry.testimonies.all() %}
                         <div class="flex-columns__item">
-
                             {% set photo = testimony.photo.one() %}
                             {% if photo %}
                                 <img src="{{ photo.getUrl('thumbnail') }}" loading="lazy" alt="{{ testimony.clientName }}" class="flex-columns__image">
                             {% endif %}
-
                             <h4> {{ testimony.clientName }} </h4>
                             <p> {{ testimony.TestimonyContent }} </p>
                         </div>
                     {% endfor %}
                 </div>
-
             </div>
         </section>
-
-
+        
     {% endcache %}
 
 {% endblock %}

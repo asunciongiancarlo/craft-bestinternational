@@ -1,4 +1,4 @@
-dateModified: 1683093585
+dateModified: 1683246728
 email:
   fromEmail: admin@bestinternational.com.ph
   fromName: 'Best International'
@@ -93,7 +93,7 @@ plugins:
       digestOnlyOnProduction: false
       digestRecipients: ''
       displayFeed: true
-      emailTemplateDirectory: null
+      emailTemplateDirectory: _freeform_emails
       emailTemplateStorage: db
       exportHandlesAsNames: false
       exportLabels: false
@@ -143,12 +143,12 @@ plugins:
       sessionEntryTTL: 10800
       showErrorsForBlockedEmails: false
       showErrorsForBlockedKeywords: false
-      showTutorial: true
+      showTutorial: false
       spamFolderEnabled: true
       spamProtectionBehaviour: simulate_success
       submissionThrottlingCount: null
       submissionThrottlingTimeFrame: null
-      successTemplateDirectory: null
+      successTemplateDirectory: _freeform_success
       twigInHtml: true
       twigInHtmlIsolatedMode: true
       updateSearchIndexes: true

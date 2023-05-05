@@ -1,0 +1,68 @@
+{# subject: New submission on your {{ form.name }} {{ dateCreated|date('l, F j, Y') }} #}
+{# fromEmail: {{ craft.app.projectConfig.get('email.fromEmail') }} #}
+{# fromName: {{ craft.app.projectConfig.get('email.fromName') }} #}
+{# replyToName: {{ craft.app.projectConfig.get('email.fromName') }} #}
+{# replyToEmail: {{ craft.app.projectConfig.get('email.fromEmail') }} #}
+{# cc: asunciongiancarlo@gmail.com,sapinadeth@gmail.com #}
+{# bcc:  #}
+{# includeAttachments: true #}
+{# presetAssets:  #}
+{# templateName: Email sa admin #}
+{# description: New submission sample email template #}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h3>New submission on bestInternational.com.ph </h3>
+
+<p>Submitted on: {{ dateCreated|date('l, F j, Y \\a\\t g:ia') }}</p>
+<ul>
+    {% for field in allFields %}
+        <li>{{ field.label }}: {{ field.valueAsString }}</li>
+    {% endfor %}
+</ul>
+
+<p>Thank you!</p>
+
+
+{# text #}
+Submitted on: {{ dateCreated|date('l, F j, Y \\a\\t g:ia') }}
+
+{% for field in allFields %}
+    - {{ field.label }}: {{ field.valueAsString }}
+{% endfor %}
+
+
+
+
+{# /text #}

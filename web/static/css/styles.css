@@ -842,6 +842,7 @@ article.section {
   margin: 0 auto;
 }
 .content-form input,
+.content-form select,
 .content-form textarea{
   border: 2px #db9536 solid;
   border-radius: 4px;
@@ -875,6 +876,9 @@ article.section {
 }
 .footer .content-form{
   margin-top: 30px;
+}
+.filter-wrapper{
+  background: white;
 }
 .filter-wrapper.content-column .banner{
   margin: 15px 0;
@@ -1148,4 +1152,19 @@ article.section {
     display: block;
   }
 
+}
+
+.freeform-form-has-errors{
+  color: red;
+}
+
+.errors li{
+  list-style: none;
+  margin-left: -39px;
+  color: red;
+  margin-top: -18px;
+}
+
+#freeform-success{
+  color: black;
 }
