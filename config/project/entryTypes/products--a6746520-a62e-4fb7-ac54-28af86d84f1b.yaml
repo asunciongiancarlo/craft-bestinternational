@@ -62,6 +62,10 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
+        name: Content
+        sortOrder: 1
+      -
+        elements:
           -
             fieldUid: 2f54fb02-de01-4b5d-b8bb-f9a7fd6b9fca # Pests
             instructions: null
@@ -89,8 +93,8 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: Content
-        sortOrder: 1
+        name: Features
+        sortOrder: 2
 handle: products
 hasTitleField: true
 name: Products
