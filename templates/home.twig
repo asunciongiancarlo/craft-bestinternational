@@ -81,7 +81,7 @@
                     {% cache using key 'products-listing' %}
                         {% for product in products  %}
                             <div class="two-columns__item product-item
-                                {% for pest  in product.pests %}{{  pest }}{% endfor %} {% for cat  in product.category %}{{ cat }} {% endfor %} {% for type  in product.features %}{{ type }}{% endfor %}
+                                {% for pest  in product.pests %}{{  pest }} {% endfor %} {% for cat  in product.category %}{{ cat }} {% endfor %} {% for type  in product.features %}{{ type }} {% endfor %}
                                 ">
                                 {% set photo = product.productThumbnail.one() %}
                                 <div class="two-columns__content product-item__content">
