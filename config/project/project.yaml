@@ -1,4 +1,4 @@
-dateModified: 1683246728
+dateModified: 1683598332
 email:
   fromEmail: admin@bestinternational.com.ph
   fromName: 'Best International'
@@ -22,6 +22,7 @@ meta:
     2a24854f-77e9-44a6-8ca3-c715328f5924: 'Home Page' # Home Page
     2dead168-5489-4ffa-9ad7-d3e6c3f4bdaf: 'Content Image' # Content Image
     2f6e2f12-9aba-4a80-8f9d-69612e59fd11: Common # Common
+    2f54fb02-de01-4b5d-b8bb-f9a7fd6b9fca: Pests # Pests
     5c5e42f2-45d8-4fcc-90ce-cdb90850aa64: Photo # Photo
     6b2bff82-5187-4701-aa70-a02b718985b2: TestimonyIntro # TestimonyIntro
     8ae7cf46-c943-46ca-899a-4b2ea79a30ab: 'Uploads $ASSET' # Uploads $ASSET
@@ -34,7 +35,10 @@ meta:
     41ed8d4a-2b1d-41e1-b383-0850554b38d1: 'Rich Text' # Rich Text
     60eb453e-5b55-49d0-9efe-6199fa72759f: 'Product Listing Page' # Product Listing Page
     63efce6b-063e-4008-a06a-d7f89a6e749d: 'Product Listing Page' # Product Listing Page
+    270fdf0b-424a-4131-82b2-c6b4ddd54e11: Category # Category
     699da4b2-b54d-4ecb-9c6d-8538db9fa7ce: Slider # Slider
+    46829db5-39d2-47b0-9b7f-e1c539a99c35: 'Filter Label' # Filter Label
+    68229c0b-634a-4ca0-a696-9a0ead290c8a: Pests # Pests
     727496e1-4532-4298-b98e-3f539cbebd3c: 'Featured Products' # Featured Products
     28370815-d073-4ef3-9d4a-dad032192bd1: Photos # Photos
     a1a2b3e6-5103-4e08-b6ed-b3f4473ef0ff: Home # Home
@@ -53,6 +57,9 @@ meta:
     e92c1b76-66ef-415c-9b13-f7b5b74aa8d4: 'BEST International' # BEST International
     e100cac8-d352-4525-9bd6-e4788be97b5a: Link # Link
     e484cb54-49c9-4f80-8ded-d769de4786f2: Uploads # Uploads
+    ea4f2f65-2c0b-49c1-a8fa-01c0d1d1c5da: Category # Category
+    ef614b21-60ab-422e-89ad-08c06eab3017: 'Type / Features' # Type / Features
+    f3222a3f-13db-418c-9fa2-a5c435641840: Features # Features
     f3839b93-5518-478b-bc0a-58a1e1311782: bestinternational # bestinternational
     ff78e4f9-dee5-41b0-a65b-4f03fa1da821: 'Public Schema' # Public Schema
 plugins:

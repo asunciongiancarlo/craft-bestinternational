@@ -1,0 +1,50 @@
+defaultPlacement: end
+fieldLayouts:
+  63fb6082-db0a-4038-99ff-5b4b008b1bd2:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: 46829db5-39d2-47b0-9b7f-e1c539a99c35 # Filter Label
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: pests
+name: Pests
+siteSettings:
+  e92c1b76-66ef-415c-9b13-f7b5b74aa8d4: # BEST International
+    hasUrls: true
+    template: null
+    uriFormat: 'pests/{slug}'
+structure:
+  maxLevels: null
+  uid: 78893d04-5cf0-4e90-9de7-10b9fdd9db0a

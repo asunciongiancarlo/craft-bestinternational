@@ -1,0 +1,50 @@
+defaultPlacement: end
+fieldLayouts:
+  2f867911-8c09-4b8c-88f6-07a803f37c81:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: 46829db5-39d2-47b0-9b7f-e1c539a99c35 # Filter Label
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: category
+name: Category
+siteSettings:
+  e92c1b76-66ef-415c-9b13-f7b5b74aa8d4: # BEST International
+    hasUrls: true
+    template: null
+    uriFormat: 'category/{slug}'
+structure:
+  maxLevels: null
+  uid: 7c1d0666-e9c8-4ce7-b9c6-55afd8f5d8e1

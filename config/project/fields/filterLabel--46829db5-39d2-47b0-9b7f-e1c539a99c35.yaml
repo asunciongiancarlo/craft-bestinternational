@@ -1,0 +1,19 @@
+columnSuffix: yzfrkcfk
+contentColumnType: text
+fieldGroup: 2f6e2f12-9aba-4a80-8f9d-69612e59fd11 # Common
+handle: filterLabel
+instructions: ''
+name: 'Filter Label'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

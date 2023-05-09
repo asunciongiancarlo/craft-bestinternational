@@ -9,4 +9,7 @@ siteSettings:
     hasUrls: true
     template: products\index
     uriFormat: products
-type: single
+structure:
+  maxLevels: null
+  uid: 9849cba1-dd27-4414-839f-20f1ccc73404
+type: structure

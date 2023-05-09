@@ -3,7 +3,7 @@
 
 {% block content %}
 
-    {% cache using key 'home' %}
+{#    {% cache using key 'home' %}#}
 
         {%  set image = entry.heroImage.one() %}
 
@@ -40,60 +40,37 @@
                     <div class="filter-block">
                         <div class="title item">Pest</div>
                         <div class="options item">
-                            <div class="option">
-                                <input type="checkbox" value="Fly" />
-                                <span>Fly</span>
-                            </div>
-                            <div class="option">
-                                <input type="checkbox" value="Fly" />
-                                <span>Ants</span>
-                            </div>
-                            <div class="option">
-                                <input type="checkbox" value="Fly" />
-                                <span>Mosquito</span>
-                            </div>
-                            <div class="option">
-                                <input type="checkbox" value="Fly" />
-                                <span>Larva</span>
-                            </div>
+                            {% set pests = craft.categories().group('pests') %}
+                            {% for pest in pests  %}
+                                <div class="option">
+                                    <input type="checkbox" class="filters" value="{{ pest.title }}" />
+                                    <span>{{ pest.filterLabel != '' ? pest.filterLabel : pest.title }}</span>
+                                </div>
+                            {% endfor %}
                         </div>
                     </div>
                     <div class="filter-block">
                         <div class="title item">Category</div>
                         <div class="options item">
-                            <div class="option">
-                                <input type="checkbox" value="Fly" />
-                                <span>Insecticide</span>
-                            </div>
-                            <div class="option">
-                                <input type="checkbox" value="Fly" />
-                                <span>Termiticide</span>
-                            </div>
-                            <div class="option">
-                                <input type="checkbox" value="Fly" />
-                                <span>Larvicide</span>
-                            </div>
-                            <div class="option">
-                                <input type="checkbox" value="Fly" />
-                                <span>Adulticide</span>
-                            </div>
+                            {% set categories = craft.categories().group('category') %}
+                            {% for category in categories  %}
+                                <div class="option">
+                                    <input type="checkbox" class="filters" value="{{ category.title }}" />
+                                    <span>{{ category.filterLabel != '' ? category.filterLabel : category.title }}</span>
+                                </div>
+                            {% endfor %}
                         </div>
                     </div>
                     <div class="filter-block">
-                        <div class="title item">Type</div>
+                        <div class="title item">Type / Features</div>
                         <div class="options item">
-                            <div class="option">
-                                <input type="checkbox" value="Fly" />
-                                <span>Liquid</span>
-                            </div>
-                            <div class="option">
-                                <input type="checkbox" value="Fly" />
-                                <span>Powder</span>
-                            </div>
-                            <div class="option">
-                                <input type="checkbox" value="Fly" />
-                                <span>Gel</span>
-                            </div>
+                            {% set features = craft.categories().group('typeFeatures') %}
+                            {% for feature in features  %}
+                                <div class="option">
+                                    <input type="checkbox" class="filters" value="{{ feature.title }}" />
+                                    <span>{{ feature.filterLabel != '' ? feature.filterLabel : feature.title }}</span>
+                                </div>
+                            {% endfor %}
                         </div>
                     </div>
                 </div>
@@ -103,12 +80,14 @@
 
                     {% cache using key 'products-listing' %}
                         {% for product in products  %}
-                            <div class="two-columns__item product-item">
+                            <div class="two-columns__item product-item
+                                {% for pest  in product.pests %}{{  pest }}{% endfor %} {% for cat  in product.category %}{{ cat }} {% endfor %} {% for type  in product.features %}{{ type }}{% endfor %}
+                                ">
                                 {% set photo = product.productThumbnail.one() %}
                                 <div class="two-columns__content product-item__content">
                                     <h2>{{ product.title }}</h2>
                                     <p>{{ product.shortDescription }}<p>
-                                        <a href="{{ product.url }}" class="cta-link">View</a>
+                                        <a href="{{ product.url }}" class="cta-link">View Product</a>
                                     </p>
                                 </div>
                                 <div class="two-columns__image product-item__image">
@@ -125,6 +104,14 @@
                     {% endcache %}
 
                 </div>
+
+                <div class="content-column centered testimonials no-product-found">
+                    <p>Sorry, no product found please try new filter.</p>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+
             </div>
             <div class="content-column centered testimonials">
 
@@ -144,7 +131,7 @@
                 </div>
             </div>
         </section>
-        
-    {% endcache %}
+
+{#    {% endcache %}#}
 
 {% endblock %}

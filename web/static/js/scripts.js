@@ -94,12 +94,43 @@ $(document).ready(function(){
     })
   }
 
+  $('.no-product-found').hide();
+
   //Isotope
   if ($('.grid-iso').length){
-    $('.grid-iso').isotope({
+
+    var $grid =  $('.grid-iso').isotope({
       // options
       itemSelector: '.grid-iso .product-item',
       layoutMode: 'fitRows'
     });
+
+    $('.filters').on('change', function() {
+      var filters = [];
+      // get checked checkboxes values
+      $('.filters:checked').each(function() {
+        filters.push('.'+$(this).val());
+      });
+      // join values into a string
+      filters = filters.join('');
+      // filter items with the selected values
+
+      console.log(filters);
+
+      $grid.isotope({ filter: filters });
+
+      setTimeout(function (e){
+
+        console.log($('.product-item:visible').length)
+
+        if($('.product-item:visible').length == 0)
+          $('.no-product-found').show();
+        else
+          $('.no-product-found').hide();
+      },800)
+
+
+    });
+
   }
 });
