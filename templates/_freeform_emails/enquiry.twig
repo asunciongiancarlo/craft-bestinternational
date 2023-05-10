@@ -3,7 +3,7 @@
 {# fromName: {{ craft.app.projectConfig.get('email.fromName') }} #}
 {# replyToName: {{ craft.app.projectConfig.get('email.fromName') }} #}
 {# replyToEmail: {{ craft.app.projectConfig.get('email.fromEmail') }} #}
-{# cc: asunciongiancarlo@gmail.com,sapinadeth@gmail.com #}
+{# cc: asunciongiancarlo@gmail.com,sapinadeth@gmail.com,arthurkingsapin@gmail.com,cauninmariane@gmail.com,ats_biobest@yahoo.com #}
 {# bcc:  #}
 {# includeAttachments: true #}
 {# presetAssets:  #}
@@ -55,12 +55,14 @@
 <p>Thank you!</p>
 
 
+
 {# text #}
 Submitted on: {{ dateCreated|date('l, F j, Y \\a\\t g:ia') }}
 
 {% for field in allFields %}
     - {{ field.label }}: {{ field.valueAsString }}
 {% endfor %}
+
 
 
 

@@ -1,4 +1,4 @@
-dateModified: 1683603629
+dateModified: 1683684441
 email:
   fromEmail: admin@bestinternational.com.ph
   fromName: 'Best International'
@@ -176,7 +176,7 @@ system:
   live: true
   name: 'BEST International'
   retryDuration: null
-  schemaVersion: 3.7.8
+  schemaVersion: 3.8.0.1
   timeZone: Asia/Manila
 users:
   allowPublicRegistration: false
