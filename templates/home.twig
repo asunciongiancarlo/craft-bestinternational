@@ -3,7 +3,7 @@
 
 {% block content %}
 
-{#    {% cache using key 'home' %}#}
+    {% cache using key 'home' %}
 
         {%  set image = entry.heroImage.one() %}
 
@@ -55,6 +55,6 @@
             </div>
         </section>
 
-{#    {% endcache %}#}
+    {% endcache %}
 
 {% endblock %}

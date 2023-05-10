@@ -9,13 +9,13 @@
     {% set products = craft.entries.section('products').all() %}
     {% set c = craft.entries.section('products').count() %}
 
-{#    {% cache using key 'products-listing' %}#}
+    {% cache using key 'products-listing' %}
 
         <section class="section">
             {% include 'products/filter-list' %}
         </section>
 
-{#    {% endcache %}#}
+    {% endcache %}
 
 {% endblock %}
 
