@@ -43,33 +43,33 @@
             {{ entry.richText }}
 
             <!--Expand/collapse-->
-            <div class="accordion-block">
-                <h3 class="accordion-block-header">FAQ No. 1</h3>
-                <div class="accordion-block-content">
-                    <p>FAQ No. 1 content answer goes here</p>
-                    <p>Accusamus amet aspernatur beatae deserunt doloremque harum ipsa, ipsum iusto, nemo.</p>
-                </div>
-                <h3 class="accordion-block-header">FAQ No. 2</h3>
-                <div class="accordion-block-content">
-                    <p>FAQ No. 2 content answer goes here</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
-                <h3 class="accordion-block-header">FAQ No. 3</h3>
-                <div class="accordion-block-content">
-                    <p>FAQ No. 3 content answer goes here</p>
-                    <p>Nbcaecati odio odit perspiciatis reiciendis soluta tempore ullam, ut voluptates.</p>
-                </div>
-            </div>
+{#            <div class="accordion-block">#}
+{#                <h3 class="accordion-block-header">FAQ No. 1</h3>#}
+{#                <div class="accordion-block-content">#}
+{#                    <p>FAQ No. 1 content answer goes here</p>#}
+{#                    <p>Accusamus amet aspernatur beatae deserunt doloremque harum ipsa, ipsum iusto, nemo.</p>#}
+{#                </div>#}
+{#                <h3 class="accordion-block-header">FAQ No. 2</h3>#}
+{#                <div class="accordion-block-content">#}
+{#                    <p>FAQ No. 2 content answer goes here</p>#}
+{#                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>#}
+{#                </div>#}
+{#                <h3 class="accordion-block-header">FAQ No. 3</h3>#}
+{#                <div class="accordion-block-content">#}
+{#                    <p>FAQ No. 3 content answer goes here</p>#}
+{#                    <p>Nbcaecati odio odit perspiciatis reiciendis soluta tempore ullam, ut voluptates.</p>#}
+{#                </div>#}
+{#            </div>#}
 
-            <!-- responsive embed video -->
-            <div class="hero-responsive ws">
-                <iframe width="1280" height="720" src="https://www.youtube.com/embed/VEyy4m0U0HQ" title="Pesticide Companies Don&#39;t Want You to Know These Secrets | Complete Guide to Organic Pest Control" frameborder="0" allow="autoplay" allowfullscreen></iframe>
-            </div>
+{#            <!-- responsive embed video -->#}
+{#            <div class="hero-responsive ws">#}
+{#                <iframe width="1280" height="720" src="https://www.youtube.com/embed/VEyy4m0U0HQ" title="Pesticide Companies Don&#39;t Want You to Know These Secrets | Complete Guide to Organic Pest Control" frameborder="0" allow="autoplay" allowfullscreen></iframe>#}
+{#            </div>#}
 
             <!--Related Products-->
 
            <div class="related-products">
-               <h3 class="title">Related Products</h3>
+               <h3 class="title">Continue to Explore</h3>
                <div class="two-columns product-listings">
                    {% set products = craft.entries.section('products').all() %}
                    {% set c = craft.entries.section('products').count() %}
@@ -85,12 +85,10 @@
                                        <a href="{{ product.url }}" class="cta-link">View Product</a>
                                    </p>
                                </div>
-
-
                                <div class="two-columns__image product-item__image">
                                    <a href="{{ product.url }}">
                                        {% if photo %}
-                                           <img src="{{ photo.url }}" loading="lazy" alt="{{ photo.title }}">
+                                           <img src="{{ photo.getUrl({ width: 600, height: 800, quality: 80, mode: 'fit' }) }}" loading="lazy" alt="{{ photo.title }} {{ product.shortDescription }}">
                                        {% else %}
                                            <img src="../web/static/images/photos/mohit-suthar-a1_tFcBSp7w-unsplash.jpg" alt="Photo">
                                        {% endif %}
