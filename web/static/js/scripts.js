@@ -78,7 +78,7 @@ $(document).ready(function(){
     $('.slick-slider').slick({
       dots: true,
       lazyLoad: 'ondemand',
-      speed: 2000,
+      speed: 1000,
       infinite: true,
       autoplay: true,
       autoplaySpeed: 2000
