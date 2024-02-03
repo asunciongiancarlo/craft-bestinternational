@@ -35,5 +35,8 @@ return [
     // Whether crawlers should be allowed to index pages and following links
     'disallowRobots' => !$isProd,
 
-    'maxUploadFileSize' => 34000000
+    'maxUploadFileSize' => 34000000,
+
+    'errorTemplatePrefix' => "404.twig",
+
 ];
